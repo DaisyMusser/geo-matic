@@ -1,16 +1,20 @@
-html {
-    background-color: lightgray;
+body {
+    background-image: url("../titan.jpg");
+    background-color: black;
     font-size: 18px;
+    background-origin: border-box;
+    background-repeat: no-repeat;
 }
 
 h1,
-section,
-div.data-entry-boxes,
-div.image-box {
-    background-color: white;
-    border: 5px solid gray;
+section{
+    color: black;
+    background-color: lightgreen;
+    border: 5px solid black;
     padding: 5px;
-    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px auto;
 }
 
 h1 {
@@ -22,13 +26,13 @@ section {
     width: 90%;
 }
 
-div.data-entry-boxes {
+section.data-entry-boxes {
     width: 40%;
-    text-align: center;
 }
 
-div.image-box {
-    width: min-content;
+div.go-button {
+    text-align: right;
+}
 
 input:hover {
     font-weight: bold;

@@ -16,25 +16,18 @@
     <body>
         <main>
             <h1> Bike Geometry Calculator </h1>
-            <hr />
             <section>
             <p>Changing the travel on your telescoping suspension fork will change your bicycle's geometry. Say you increase your forks travel by <strong>10mm</strong>. This will <strong>raise</strong> your bottom bracket height, <strong>lengthen</strong> your wheelbase (very slightly) and <strong>slacken</strong> your head tube angle. <strong><em>But by how much??</em></strong> Find out below...</p>
-            <p> The only information needed to calculate your new headtube angle and wheelbase is your stock head tube angle and wheelbase. Wheelbase the distance from center of front axel to center of rear (in mm). Head tube angle is the angle found between your steering axis and the ground (in degrees). Please enter your stock Wheelbase, stock head tube anlge, and amount of travel you are adding to your fork. </p>
+            <p>The only information needed to calculate your new headtube angle and wheelbase is your stock head tube angle and wheelbase. Wheelbase the distance from center of front axel to center of rear (in mm). Head tube angle is the angle found between your steering axis and the ground (in degrees). Please enter your stock Wheelbase, stock head tube anlge, and amount of travel you are adding to your fork. </p>
             </section>
-            <hr />
-            <div class="data-entry-boxes">
+            <section class="data-entry-boxes">
                 <input type="number" id="WB" placeholder="Stock Wheelbase"/>
                 <input type="number" id="HT" placeholder="Stock Head Tube Angle" />
-                <input type="number" id="AT" placeholder="Added Fork Travel"/>
-                <button type="button">GO!</button>
-            </div>
-            <hr />
-            <div class="image-box">
-                <img
-                    src="images/mtbike.avif"
-                    alt="Mountain bike" 
-                    width="500"
-                    height="375" /></div>
+                <input type="number" id="AT" placeholder="Added Fork Travel"/> 
+                <div class="go-button">
+                    <button type="button">GO!</button>
+                </div>
+            </section>
         </main>
     </body>
 </html>
