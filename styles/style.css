@@ -1,0 +1,36 @@
+html {
+    background-color: lightgray;
+    font-size: 18px;
+}
+
+h1,
+section,
+div.data-entry-boxes,
+div.image-box {
+    background-color: white;
+    border: 5px solid gray;
+    padding: 5px;
+    margin: auto;
+}
+
+h1 {
+    width: 28%;
+    text-align: center;
+}
+
+section {
+    width: 90%;
+}
+
+div.data-entry-boxes {
+    width: 40%;
+    text-align: center;
+}
+
+div.image-box {
+    width: min-content;
+
+input:hover {
+    font-weight: bold;
+}
+
