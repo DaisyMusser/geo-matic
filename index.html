@@ -9,28 +9,32 @@
             content="I wanted a nice tool to check how different amounts of fork travel alter my bicycles geometry. This was also a good excuse to play around with some basic web development." />
         <link rel="icon" href="images/wheel-icon.png" type="image/wheel-icon" />
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <script src="my-js-file.js" defer></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- <p>defer makes this load after the html</p> -->
+        <script src="scripts/script.js" defer></script>
     </head>
     <body>
         <main>
             <h1> Bike Geometry Calculator </h1>
+            <hr />
             <section>
             <p>Changing the travel on your telescoping suspension fork will change your bicycle's geometry. Say you increase your forks travel by <strong>10mm</strong>. This will <strong>raise</strong> your bottom bracket height, <strong>lengthen</strong> your wheelbase (very slightly) and <strong>slacken</strong> your head tube angle. <strong><em>But by how much??</em></strong> Find out below...</p>
-            <!-- <p> This is how you comment!</p> -->
             <p> The only information needed to calculate your new headtube angle and wheelbase is your stock head tube angle and wheelbase. Wheelbase the distance from center of front axel to center of rear (in mm). Head tube angle is the angle found between your steering axis and the ground (in degrees). Please enter your stock Wheelbase, stock head tube anlge, and amount of travel you are adding to your fork. </p>
-            <hr />
-            <p>
-                <input type="text" placeholder="Stock Wheelbase (mm)"/>
-                <input type="text" placeholder="Stock Head Tube Angle (degrees)" />
-                <input type="text" placeholder="Increase in Fpork Travel (mm)"/>
-            </p>
             </section>
-            <img
-                src="images/mtbike.avif"
-                alt="Mountain bike" 
-                width="500"
-                height="375" />
+            <hr />
+            <div class="data-entry-boxes">
+                <input type="text" placeholder="Stock Wheelbase"/>
+                <input type="text" placeholder="Stock Head Tube Angle" />
+                <input type="text" placeholder="Increase in Fork Travel"/>
+                <button type="button">GO!</button>
+            </div>
+            <hr />
+            <div class="image-box">
+                <img
+                    src="images/mtbike.avif"
+                    alt="Mountain bike" 
+                    width="500"
+                    height="375" /></div>
         </main>
     </body>
 </html>
