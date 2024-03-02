@@ -1,5 +1,5 @@
 body {
-    background-image: url("../titan.jpg");
+    background-image: url("../images/titan.jpg");
     background-color: black;
     font-size: 18px;
     background-origin: border-box;
@@ -24,6 +24,11 @@ h1 {
 
 section {
     width: 90%;
+}
+
+section#results-box {
+    display: none;
+    width: min-content;
 }
 
 section.data-entry-boxes {
